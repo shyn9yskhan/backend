@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style/dashboard.css">
+</head>
+<body>
+    <h1>admin panel</h1>
+    
+    <div id="adminPanelButtons" style="display: block;">
+        <button id="logoutButton">logout</button>
+        <button id="deleteUserPanelButton">delete user</button>
+        <button id="deletePostPanelButton">delete post</button>
+        <button id="updateUserRolePanelButton">update user role</button>
+    </div>
+
+    <div id="deleteUserForm" class="PanelForms" style="display: none;">
+        <p>delete user</p>
+        <textarea id="deleteUserUsername"></textarea>
+        <button id="deleteUserButton" class="submitFormButton">delete</button>
+        <button id="cancelUserButton" class="cancelFormButton">cancel</button>
+    </div>
+
+    <div id="deletePostForm" class="PanelForms" style="display: none;">
+        <p>delete post</p>
+        <textarea id="deletePostID"></textarea>
+
+        <button id="deletePostButton" class="submitFormButton">delete</button>
+        <button id="cancelPostButton" class="cancelFormButton">cancel</button>
+    </div>
+
+    <div id="updateUserRoleForm" class="PanelForms" style="display: none;">
+        <p>user</p>
+        <textarea id="updateUserRoleID"></textarea>
+        <p>role</p>
+        <textarea id="userRoleText"></textarea>
+
+        <button id="submitUpdateButton" class="submitFormButton">submit</button>
+        <button id="cancelUpdateButton" class="cancelFormButton">cancel</button>
+    </div>
+
+    <script defer src="/script/dashboard.js"></script>
+    <script defer src="/script/adminpanel.js"></script>
+</body>
+</html>

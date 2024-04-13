@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="/style/profile.css">
+</head>
+<body>
+    <h3 id="username"></h3>
+    
+    <div id="profileInfo" style="display: block;">
+    <p>name: <span id="name"></span></p>
+    <p>bio: <span id="bio"></span></p>
+    <button id="editProfile">edit profile</button>
+    </div>
+
+    <div id="editProfileForm" style="display: none;">
+        <textarea id="editedName"></textarea>
+        <textarea id="editedBio"></textarea>
+        <button id="submitInfoButton">submit</button>
+        <button id="cancelInfoButton">cancel</button>
+    </div>
+
+
+    
+    <p>followers: <span id="followers"></span></p>
+    <p>followings: <span id="followings"></span></p>
+    <p>posts: <span id="posts"></span></p>
+
+    <button id="createPostButton">new post</button>
+    
+    <div id="postForm" style="display: none;">
+        <textarea id="postContent"></textarea>
+        <button id="submitPostButton">submit</button>
+        <button id="cancelPostButton">cancel</button>
+    </div>
+
+    <div id="postsArea"></div>
+
+    <script defer src="/script/myprofile.js"></script>
+</body>
+</html>
